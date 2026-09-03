@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of 23MIC7031 - Full-Stack Developer, Computer Science Engineer, AI & Web Application Architect. Explore projects, technical skills, and experience.">
+  <meta name="keywords" content="23MIC7031, Software Engineer, Portfolio, Developer, Web Development, Full Stack, React, Python, Computer Science">
+  <meta name="author" content="23MIC7031">
+  <title>23MIC7031 | Developer & Software Engineer Portfolio</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Dynamic Background Particles & Glow -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <div class="logo-badge">&lt;/&gt;</div>
+        <span>23MIC7031</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#timeline" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.88rem;">Hire Me</a>
+        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Open mobile menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span> Available for Software Engineering & Dev Roles
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">23MIC7031</span><br>
+            <span class="typing-container" id="typing-text"></span>
+          </h1>
+          <p class="hero-subtitle">
+            Computer Science Engineer dedicated to building robust web platforms, intelligent algorithms, and seamless user experiences with modern technologies.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> Explore Work
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-solid fa-envelope"></i> Get In Touch
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="mailto:dev23mic7031@example.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-at"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <img src="assets/developer_avatar.jpg" alt="23MIC7031 Developer Avatar" class="avatar-img">
+          </div>
+          <div class="floating-tech-badge badge-1">
+            <i class="fa-brands fa-react" style="color: #61dafb;"></i> React & Web App
+          </div>
+          <div class="floating-tech-badge badge-2">
+            <i class="fa-brands fa-python" style="color: #387eb8;"></i> Python & AI
+          </div>
+          <div class="floating-tech-badge badge-3">
+            <i class="fa-solid fa-code-branch" style="color: #f34f29;"></i> Git & DevOps
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Counter Strip -->
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <div class="stat-number gradient-text" data-target="18">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number gradient-text" data-target="10">0</div>
+          <div class="stat-label">Core Tech Stacks</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number gradient-text" data-target="500">0</div>
+          <div class="stat-label">+ Code Commits</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number gradient-text" data-target="100">0</div>
+          <div class="stat-label">% Passion & Commitment</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-user"></i> About Me</span>
+          <h2 class="section-title">Architecting Digital Solutions</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Who is 23MIC7031?</h3>
+            <p class="about-text">
+              I am a driven Computer Science & Software Engineering enthusiast (ID: 23MIC7031) with a deep passion for writing clean, efficient code and developing scalable web applications. My journey spans full-stack web development, algorithm design, data structures, and AI integration.
+            </p>
+            <p class="about-text">
+              Whether crafting high-performance user interfaces or designing responsive backend API services, I strive for engineering excellence and elegant visual aesthetics.
+            </p>
+
+            <div class="bio-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-graduation-cap highlight-icon"></i>
+                <div>
+                  <div class="highlight-title">Education</div>
+                  <div class="highlight-desc">Integrated M.Tech CS / Engg</div>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-laptop-code highlight-icon"></i>
+                <div>
+                  <div class="highlight-title">Focus Area</div>
+                  <div class="highlight-desc">Full-Stack & Systems</div>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-gears highlight-icon"></i>
+                <div>
+                  <div class="highlight-title">Architecture</div>
+                  <div class="highlight-desc">REST APIs & Microservices</div>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-bolt highlight-icon"></i>
+                <div>
+                  <div class="highlight-title">Mindset</div>
+                  <div class="highlight-desc">Agile & Continuous Learning</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div class="about-card" style="border-left: 4px solid var(--accent-cyan);">
+              <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-lightbulb" style="color: var(--accent-amber); margin-right: 0.5rem;"></i> Innovation & Problem Solving</h4>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                Constantly exploring cutting-edge tools, framework updates, and optimization techniques to solve complex real-world challenges.
+              </p>
+            </div>
+
+            <div class="about-card" style="border-left: 4px solid var(--secondary);">
+              <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-code" style="color: var(--secondary); margin-right: 0.5rem;"></i> Clean Code Standard</h4>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                Committed to modular code structures, comprehensive documentation, git best practices, and accessible web standard compliance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Matrix -->
+    <section class="section" id="skills" style="background: rgba(15, 23, 42, 0.3);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-layer-group"></i> Technical Stack</span>
+          <h2 class="section-title">Skills & Capabilities</h2>
+        </div>
+
+        <div class="skills-nav">
+          <button class="skill-tab active" data-category="all">All Skills</button>
+          <button class="skill-tab" data-category="frontend">Frontend</button>
+          <button class="skill-tab" data-category="backend">Backend & DB</button>
+          <button class="skill-tab" data-category="tools">Tools & Systems</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Skill Items -->
+          <div class="skill-card" data-cat="frontend">
+            <div class="skill-info">
+              <div class="skill-name-group">
+                <i class="fa-brands fa-html5 skill-icon" style="color: #e34f26;"></i>
+                <span class="skill-name">HTML5 & CSS3 / Modern Layouts</span>
+              </div>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" data-progress="95%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-cat="frontend">
+            <div class="skill-info">
+              <div class="skill-name-group">
+                <i class="fa-brands fa-js skill-icon" style="color: #f7df1e;"></i>
+                <span class="skill-name">JavaScript (ES6+) & TypeScript</span>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" data-progress="90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-cat="frontend">
+            <div class="skill-info">
+              <div class="skill-name-group">
+                <i class="fa-brands fa-react skill-icon" style="color: #61dafb;"></i>
+                <span class="skill-name">React.js & Frontend State</span>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" data-progress="85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-cat="backend">
+            <div class="skill-info">
+              <div class="skill-name-group">
+                <i class="fa-brands fa-python skill-icon" style="color: #3776ab;"></i>
+                <span class="skill-name">Python & Data Structures</span>
+              </div>
+              <span class="skill-percentage">92%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" data-progress="92%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-cat="backend">
+            <div class="skill-info">
+              <div class="skill-name-group">
+                <i class="fa-brands fa-node-js skill-icon" style="color: #339933;"></i>
+                <span class="skill-name">Node.js & Express REST APIs</span>
+              </div>
+              <span class="skill-percentage">88%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" data-progress="88%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-cat="backend">
+            <div class="skill-info">
+              <div class="skill-name-group">
+                <i class="fa-solid fa-database skill-icon" style="color: #336791;"></i>
+                <span class="skill-name">SQL (PostgreSQL) & MongoDB</span>
+              </div>
+              <span class="skill-percentage">82%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" data-progress="82%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-cat="tools">
+            <div class="skill-info">
+              <div class="skill-name-group">
+                <i class="fa-brands fa-git-alt skill-icon" style="color: #f05032;"></i>
+                <span class="skill-name">Git Version Control & GitHub</span>
+              </div>
+              <span class="skill-percentage">94%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" data-progress="94%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-cat="tools">
+            <div class="skill-info">
+              <div class="skill-name-group">
+                <i class="fa-brands fa-docker skill-icon" style="color: #2496ed;"></i>
+                <span class="skill-name">Docker & Containerization Basics</span>
+              </div>
+              <span class="skill-percentage">78%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" data-progress="78%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-laptop-code"></i> Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="webapp">Web Apps</button>
+          <button class="filter-btn" data-filter="ai">AI / ML</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-image-wrapper">
+              <img src="assets/project_analytics.jpg" alt="CloudIQ Analytics Dashboard" class="project-img">
+              <div class="project-overlay">
+                <button class="overlay-btn open-modal-btn" data-modal="modal-1" aria-label="Preview"><i class="fa-solid fa-eye"></i></button>
+                <a href="https://github.com" target="_blank" class="overlay-btn" aria-label="GitHub Source"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag-pill">JavaScript</span>
+                <span class="tag-pill">Node.js</span>
+                <span class="tag-pill">Chart.js</span>
+              </div>
+              <h3 class="project-title">CloudIQ Analytics Dashboard</h3>
+              <p class="project-desc">
+                A real-time metric visualization application for developer API latency, infrastructure health monitoring, and server logs.
+              </p>
+              <div class="project-footer">
+                <button class="project-link-btn open-modal-btn" data-modal="modal-1">
+                  View Details <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="https://github.com" target="_blank" style="color: var(--text-muted); font-size: 1.1rem;"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-category="ai">
+            <div class="project-image-wrapper">
+              <img src="assets/project_ai_assistant.jpg" alt="CodeFlow AI Refactor Tool" class="project-img">
+              <div class="project-overlay">
+                <button class="overlay-btn open-modal-btn" data-modal="modal-2" aria-label="Preview"><i class="fa-solid fa-eye"></i></button>
+                <a href="https://github.com" target="_blank" class="overlay-btn" aria-label="GitHub Source"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag-pill">Python</span>
+                <span class="tag-pill">AI/LLM API</span>
+                <span class="tag-pill">React</span>
+              </div>
+              <h3 class="project-title">CodeFlow AI Refactoring Suite</h3>
+              <p class="project-desc">
+                An intelligent code analyzer and refactoring engine featuring side-by-side diff visualization and instant performance suggestions.
+              </p>
+              <div class="project-footer">
+                <button class="project-link-btn open-modal-btn" data-modal="modal-2">
+                  View Details <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="https://github.com" target="_blank" style="color: var(--text-muted); font-size: 1.1rem;"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card" data-category="webapp">
+            <div class="project-image-wrapper">
+              <img src="assets/project_mobile_app.jpg" alt="Synapse Smart Task Manager" class="project-img">
+              <div class="project-overlay">
+                <button class="overlay-btn open-modal-btn" data-modal="modal-3" aria-label="Preview"><i class="fa-solid fa-eye"></i></button>
+                <a href="https://github.com" target="_blank" class="overlay-btn" aria-label="GitHub Source"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag-pill">HTML5/CSS3</span>
+                <span class="tag-pill">Vanilla JS</span>
+                <span class="tag-pill">Responsive</span>
+              </div>
+              <h3 class="project-title">Synapse Task Management Hub</h3>
+              <p class="project-desc">
+                Sleek glassmorphic task organizing web application featuring dynamic filtering, priority tags, mobile view, and drag-and-drop workflow.
+              </p>
+              <div class="project-footer">
+                <button class="project-link-btn open-modal-btn" data-modal="modal-3">
+                  View Details <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="https://github.com" target="_blank" style="color: var(--text-muted); font-size: 1.1rem;"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Timeline -->
+    <section class="section" id="timeline" style="background: rgba(15, 23, 42, 0.3);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-graduation-cap"></i> Journey</span>
+          <h2 class="section-title">Education & Experience</h2>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2023 - Present</div>
+              <h3 class="timeline-title">Integrated M.Tech in Computer Science</h3>
+              <div class="timeline-subtitle">Academic ID: 23MIC7031</div>
+              <p class="timeline-desc">
+                Specializing in Data Structures, Algorithms, Full-Stack Web Technologies, Software Engineering, and Database Management Systems.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2024</div>
+              <h3 class="timeline-title">Lead Web Developer</h3>
+              <div class="timeline-subtitle">Hackathon Project & Open Source</div>
+              <p class="timeline-desc">
+                Architected responsive web frontend and REST APIs for a collaborative team project, winning recognition for performance and UI/UX design.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2024 - 2025</div>
+              <h3 class="timeline-title">Open Source & Personal Projects</h3>
+              <div class="timeline-subtitle">Full Stack Development</div>
+              <p class="timeline-desc">
+                Built multiple utility web apps, AI tools, and dashboard templates utilizing modern CSS3 glassmorphism design systems and modular JavaScript.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-paper-plane"></i> Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Let's build something amazing together!</h3>
+            <p style="color: var(--text-muted); margin-bottom: 2rem; line-height: 1.7;">
+              I am always open to discussing web development projects, engineering roles, open source collaborations, or technical ideas. Feel free to send a message!
+            </p>
+
+            <div class="contact-info-list">
+              <div class="contact-info-card">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <div class="contact-info-label">Direct Email</div>
+                  <div class="contact-info-val">dev23mic7031@example.com</div>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <div class="contact-info-label">Location</div>
+                  <div class="contact-info-val">India (Open for Remote & Relocation)</div>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>
+                  <div class="contact-info-label">Status</div>
+                  <div class="contact-info-val">Available for Internships & Projects</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. Alex Johnson" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" class="form-input" placeholder="e.g. alex@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-input" placeholder="Project Inquiry / Job Opportunity" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" placeholder="Hello 23MIC7031, I would like to discuss..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="brand-logo">
+        <div class="logo-badge">&lt;/&gt;</div>
+        <span>23MIC7031</span>
+      </div>
+
+      <div class="footer-text">
+        &copy; <span id="current-year">2026</span> 23MIC7031. Crafted with HTML5, Vanilla CSS & JavaScript.
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modal-body-content">
+        <!-- Injected dynamically via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
